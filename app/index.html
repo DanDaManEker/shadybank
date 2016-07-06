@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>$hady Bank Dashboard</title>
+    <link href='https://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="resources/images/favicon.gif?v=2" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../libs/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../libs/chartist-Js/chartist.min.css">
+    <link rel="stylesheet" href="resources/css/app.css">
+    <script src="../libs/jquery/jquery-2.2.4.js"></script>
+    <script src="../libs/chartist-Js/chartist.min.js"></script>
+    <script src="../libs/chartist-Js/chartist-plugin-legend.js"></script>
+    <script src="../libs/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+    <script src="script/app.js"></script>
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+</head>
+<body>
+<!--this is the header, the on screen not the tag-->
+<header>
+    <div class="row">
+        <div class="col-md-2 col-xs-12">
+            <button type="button" class="btn btn-default shadyLogo">
+            </button>
+
+        </div>
+        <div class="col-md-10 col-xs-12">
+            <h1 class="text-uppercase shadytop">Silently eliminating your money
+            </h1>
+        </div>
+        <!--make a gif of out of the shadows or mist-->
+
+    </div>
+</header>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Color<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li value="blue"><a href="#">Blue</a></li>
+                        <li value="red"><a href="#">Red</a></li>
+                        <li value="yellow"><a href="#">Yellow</a></li>
+                        <li value="green"><a href="#">Green</a></li>
+                        <li value="purple"><a href="#">Purple</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--This is the pi chart area-->
+<div class="row">
+    <div class="col-md-6 col-xs-12">
+        <div class="panel panel-default shady-panel-body hidden-sm-block">
+            <div class="panel-heading shady-panel-heading background-color-blue">
+                <h3 class="panel-title pull-left">Money Transfer Status</h3>
+                <button class="glyphicon glyphicon-menu-up pull-right shady-switcher"></button>
+                <div class="clearfix"></div>
+
+            </div>
+            <div class="panel-body">
+                <div class="ct-chart ct-perfect-fourth" id="pieChart">
+                </div>
+
+            </div>
+        </div>
+        <!--here is where the pi chart will be-->
+        <!--This is where the XY chart area-->
+
+        <div class="panel panel-default shady-panel-body">
+            <div class="panel-heading shady-panel-heading background-color-blue">
+                <h3 class="panel-title pull-left">Rich VS Broke</h3>
+                <button class="glyphicon glyphicon-menu-up pull-right shady-switcher"></button>
+                <div class="clearfix"></div>
+            </div>
+            <div class="panel-body">
+                <div class="ct-chart ct-perfect-fourth" id="barChart">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--here is where the table will be-->
+    <div class="col-md-6 col-xs-12">
+        <div class="panel panel-default shady-panel-body">
+            <div class="panel-heading shady-panel-heading background-color-blue">
+                <h3 class="panel-title pull-left">Online Slaves</h3>
+                <button class="glyphicon glyphicon-menu-up pull-right shady-switcher"></button>
+                <div class="clearfix"></div>
+            </div>
+            <div class="panel-body">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Location</th>
+                        <th>Last Online</th>
+                    </tr>
+                    </thead>
+                    <tbody id="shady-slaves">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel panel-default shady-panel-body">
+            <div class="panel-heading shady-panel-heading background-color-blue">
+                <h3 class="panel-title pull-left">Money Stolen</h3>
+                <button class="glyphicon glyphicon-menu-up pull-right shady-switcher"></button>
+                <div class="clearfix"></div>
+                <!--This is where the update status will be-->
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li>Current Funds In Process</li>
+                    <!--add java scrip count-up and $ sign-->
+                    <li>Next Planned Security Breach : <span id="shady-objective"></span></li>
+                    <!--Progress bar catching up-->
+                </ul>
+                <button type="button" id="steal-money-btn" class="btn btn-danger pull-right"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span>Steal Money Now</button>
+                <!--instead of security we will make a amount goal until next security breach and how much we have at the moment, the button will be SEAL EVERYTHING NOW-->
+            </div>
+            <!--add server information on last update here-->
+        </div>
+    </div>
+</div>
+<div class="visible-print-block">Printable Version 2016, all rights reserved, Shady Bank.
+
+</div>
+</body>
+</html>

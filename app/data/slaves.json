@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Cloude Strife",
+        "status": "online",
+        "location": "Gold Saucer",
+        "lastOnline": "15/06/2016"
+    },
+    {
+        "name": "Tifa Lockheart",
+        "status": "offline",
+        "location": "Costa Del Sol",
+        "lastOnline": "10/06/2016"
+    },
+    {
+        "name": "Barret 11",
+        "status": "offline",
+        "location": "Sector 7 Slums",
+        "lastOnline": "01/05/2016"
+    },
+    {
+        "name": "Red XIII",
+        "status": "online",
+        "location": "Highwind",
+        "lastOnline": "11/05/1997"
+    }
+]
