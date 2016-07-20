@@ -4,21 +4,29 @@
 - All panel informations are interchangable by JSON files.
 - Every panel can be folded up or down at any time
 - Due to using the Bootstrap grid system, the dashboard is responsive and mobile ready.
-## Money Transfer Status 
-#### This portion of the dashboard, interchangably by JSON, indicates three attributes: 
+
+**Money Transfer Status**
+
+This portion of the dashboard, interchangably by JSON, indicates three attributes: 
 - Complete money transfers until this moment in time.
 - Held money transfers until this moment in time.
 - Failed Transfers until this moment in time
 - I also used chartist's chart kit. 
-## Online Slaves
+
+**Online Slaves**
+
 This portion of the dashboard is a table that indicated the following:
 - Names of the Bank's workers
 - Location
 - Online/Offline status
 - last login date
-## Rich VS Broke
+
+**Rich VS Broke**
+
 This portion of the dashboard is a chart that shows clients in negative next to clients in positive balance throu-out the course of the last four weeks. 
 By pressing the legend in the top left corner, you can toggle the "Rich" and the "Broke" from the chart.
-## Money Stolen
+
+**Money Stolen**
+
 This portion of the dashboard is a animated, striped progressing bar that presents the amount of funds being held in the bank, as apposed to the next planned security breach, where all the money will be "stolen". 
 - I also added a Steal Money Now button, for when urgency strikes.
