@@ -78,12 +78,15 @@ body{
     background-color:#733182;
 
 }
-
+/*//until now was the header and the top*/
 .shady-panel-heading h3{
     color: #fff;
 }
 .panel-body{
     margin-bottom: 30px;
+}
+.ct-series-c .ct-slice-pie {
+    fill: rgba(46, 197, 14, 0.83);
 }
 .shady-too-long {
     width: 80px;
@@ -162,6 +165,24 @@ span.ct-label.ct-horizontal.ct-end{
 .ct-series-a .ct-bar {
     stroke: #3c763d;
     stroke-width: 17px;
+}
+#progressBar {
+    width: 400px;
+    height: 22px;
+    border: 1px solid #111;
+    background-color: red;
+}
+.progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#progressBar div {
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color: #0099ff;
 }
 /*rich mother fuckers*/
 .ct-series-b .ct-bar {

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../libs/chartist-Js/chartist.min.css">
     <link rel="stylesheet" href="resources/css/app.css">
     <script src="../libs/jquery/jquery-2.2.4.js"></script>
+    <script src="../libs/countdown/jquery.countdown.min.js"></script>
     <script src="../libs/chartist-Js/chartist.min.js"></script>
     <script src="../libs/chartist-Js/chartist-plugin-legend.js"></script>
     <script src="../libs/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
@@ -121,11 +122,27 @@
             <div class="panel-body">
                 <ul>
                     <li>Current Funds In Process</li>
-                    <!--add java scrip count-up and $ sign-->
-                    <li>Next Planned Security Breach : <span id="shady-objective"></span></li>
-                    <!--Progress bar catching up-->
+                    <div class="progress" id="progress">
+                        <div class="progress-bar progress-bar-striped active progress-bar-ascending" role="progressbar"
+                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">$1,500,000
+                        </div>
+                    </div>
                 </ul>
+
+                <ul>
+                    <li>Next Planned Security Breach : <span id="shady-objective"></span></li>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                             aria-valuenow="2000000" aria-valuemin="0" aria-valuemax="100" style="width:100%">$2,000,000
+                        </div>
+                    </div>
+
+                    <!--&lt;!&ndash;add java scrip count-up and $ sign&ndash;&gt;-->
+                    <!--&lt;!&ndash;Progress bar catching up&ndash;&gt;-->
+                </ul>
+
                 <button type="button" id="steal-money-btn" class="btn btn-danger pull-right"><span class="glyphicon glyphicon-tower" aria-hidden="true"></span>Steal Money Now</button>
+                <span id="clock"></span>
                 <!--instead of security we will make a amount goal until next security breach and how much we have at the moment, the button will be SEAL EVERYTHING NOW-->
             </div>
             <!--add server information on last update here-->
